@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "lXWpGeY8edFtBdCLavsmLouf6jhnd0W5hgRx5UlenLA=",
+  "Source": "Ledger.API",
+  "BasePath": "_content/Ledger.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

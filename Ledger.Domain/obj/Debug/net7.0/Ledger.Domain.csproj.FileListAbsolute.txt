@@ -1,0 +1,12 @@
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\obj\Debug\net7.0\Ledger.Domain.csproj.AssemblyReference.cache
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\obj\Debug\net7.0\Ledger.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\obj\Debug\net7.0\Ledger.Domain.AssemblyInfoInputs.cache
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\obj\Debug\net7.0\Ledger.Domain.AssemblyInfo.cs
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\obj\Debug\net7.0\Ledger.Domain.csproj.CoreCompileInputs.cache
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\bin\Debug\net7.0\Ledger.Domain.deps.json
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\bin\Debug\net7.0\Ledger.Domain.dll
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\bin\Debug\net7.0\Ledger.Domain.pdb
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\obj\Debug\net7.0\Ledger.Domain.dll
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\obj\Debug\net7.0\refint\Ledger.Domain.dll
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\obj\Debug\net7.0\Ledger.Domain.pdb
+C:\Users\37493\Source\Repos\Ledger\Ledger.Domain\obj\Debug\net7.0\ref\Ledger.Domain.dll
