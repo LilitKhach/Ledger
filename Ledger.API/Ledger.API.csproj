@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ledger.Application\Ledger.Application.csproj" />
+    <ProjectReference Include="..\Ledger.Persistence\Ledger.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

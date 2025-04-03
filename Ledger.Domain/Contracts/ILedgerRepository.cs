@@ -1,11 +1,8 @@
-﻿namespace Ledger.Domain.Contracts
-{
-    public interface ILedgerRepository
-    {
-        LedgerModel Deposit(decimal depositAmount);
+﻿namespace Ledger.Domain.Contracts;
 
-        LedgerModel Withdraw(decimal withdrawalAmount);
-        decimal CurrentBalance();
-        void TransactionHistory();
-    }
+public interface ILedgerRepository
+{
+    Guid CreateLedger();
+    LedgerModel GetLedgerById(Guid id);
+    void SaveLedger(LedgerModel ledger);
 }
