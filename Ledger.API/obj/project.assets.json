@@ -130,6 +130,19 @@
         "runtime": {
           "bin/placeholder/Ledger.Domain.dll": {}
         }
+      },
+      "Ledger.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Ledger.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ledger.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ledger.Persistence.dll": {}
+        }
       }
     }
   },
@@ -484,11 +497,17 @@
       "type": "project",
       "path": "../Ledger.Domain/Ledger.Domain.csproj",
       "msbuildProject": "../Ledger.Domain/Ledger.Domain.csproj"
+    },
+    "Ledger.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Ledger.Persistence/Ledger.Persistence.csproj",
+      "msbuildProject": "../Ledger.Persistence/Ledger.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Ledger.Application >= 1.0.0",
+      "Ledger.Persistence >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.4",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -522,6 +541,9 @@
           "projectReferences": {
             "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Application\\Ledger.Application.csproj": {
               "projectPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Application\\Ledger.Application.csproj"
+            },
+            "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Persistence\\Ledger.Persistence.csproj": {
+              "projectPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Persistence\\Ledger.Persistence.csproj"
             }
           }
         }

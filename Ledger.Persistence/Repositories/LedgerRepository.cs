@@ -1,50 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
-using Ledger.Domain;
+﻿using Ledger.Domain;
+using Ledger.Domain.Contracts;
 
-namespace Ledger.Persistence.Repositories
+namespace Ledger.Persistence.Repositories;
+
+public class LedgerRepository : ILedgerRepository
 {
-    public class LedgerRepository
+    private readonly Dictionary<Guid, LedgerModel> Ledgers = new();
+
+    public Guid CreateLedger()
     {
-        private List<TransactionRecord> TransactionRecords = new List<TransactionRecord>();
+        Guid id = Guid.NewGuid();
 
-        public LedgerModel Deposit(decimal depositAmount)
+        if (!Ledgers.TryAdd(id, new LedgerModel()))
         {
-            var transactionRecord = new TransactionRecord(Guid.NewGuid(), TransactionType.Deposit, 100, DateTime.Now);
-            TransactionRecords.Add(transactionRecord);
-
-            return new LedgerModel { TransactionRecords = this.TransactionRecords };
+            throw new Exception("Ledger not created.");
         }
 
-        public LedgerModel Withdraw(decimal withdrawalAmount)
-        {
-            decimal currentBalance = CurrentBalance();
-            if (currentBalance < withdrawalAmount)
-            {
-                throw new InvalidOperationException("Insufficient funds");
-            }
-
-            var transactionRecord = new TransactionRecord(Guid.NewGuid(), TransactionType.Withdrawal, withdrawalAmount, DateTime.Now);
-            TransactionRecords.Add(transactionRecord);
-
-            return new LedgerModel { TransactionRecords = this.TransactionRecords};
-        }
-
-        public decimal CurrentBalance()
-        {
-            return TransactionRecords.Sum(tr => tr.TransactionType == TransactionType.Deposit ? tr.Amount : -tr.Amount);
-        }
-
-        public void TransactionHistory()
-        {
-            foreach (var transactionRecord in TransactionRecords)
-            {
-                Console.WriteLine($"{transactionRecord.Date} - {transactionRecord.TransactionType}: ${transactionRecord.Amount}");
-            }
-        }
+        return id;
     }
+
+    public LedgerModel GetLedgerById(Guid id)
+    {
+        if (!Ledgers.TryGetValue(id, out var ledger))
+        {
+            throw new Exception("Ledger not found.");
+        }
+
+        return ledger;
+    }
+
+    public void SaveLedger(LedgerModel ledger) => Ledgers[ledger.Id] = ledger;
 }

@@ -72,3 +72,5 @@ C:\Users\37493\Source\Repos\Ledger\Ledger.API\obj\Debug\net7.0\refint\Ledger.API
 C:\Users\37493\Source\Repos\Ledger\Ledger.API\obj\Debug\net7.0\Ledger.API.pdb
 C:\Users\37493\Source\Repos\Ledger\Ledger.API\obj\Debug\net7.0\Ledger.API.genruntimeconfig.cache
 C:\Users\37493\Source\Repos\Ledger\Ledger.API\obj\Debug\net7.0\ref\Ledger.API.dll
+C:\Users\37493\Source\Repos\Ledger\Ledger.API\bin\Debug\net7.0\Ledger.Persistence.dll
+C:\Users\37493\Source\Repos\Ledger\Ledger.API\bin\Debug\net7.0\Ledger.Persistence.pdb

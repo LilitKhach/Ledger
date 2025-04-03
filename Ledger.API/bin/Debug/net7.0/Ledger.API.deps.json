@@ -9,6 +9,7 @@
       "Ledger.API/1.0.0": {
         "dependencies": {
           "Ledger.Application": "1.0.0",
+          "Ledger.Persistence": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.4",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -86,6 +87,14 @@
         "runtime": {
           "Ledger.Domain.dll": {}
         }
+      },
+      "Ledger.Persistence/1.0.0": {
+        "dependencies": {
+          "Ledger.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Ledger.Persistence.dll": {}
+        }
       }
     }
   },
@@ -150,6 +159,11 @@
       "sha512": ""
     },
     "Ledger.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ledger.Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
