@@ -1,3 +1,3 @@
 namespace Ledger.Domain;
 
-public record TransactionRecord(int Id, TransactionType TransactionType, decimal Amount, DateTime Date);
+public record TransactionRecord(Guid Id, TransactionType TransactionType, decimal Amount, DateTime Date);

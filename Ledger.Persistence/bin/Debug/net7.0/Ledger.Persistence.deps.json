@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "Ledger.Persistence/1.0.0": {
+        "dependencies": {
+          "Ledger.Domain": "1.0.0"
+        },
         "runtime": {
           "Ledger.Persistence.dll": {}
+        }
+      },
+      "Ledger.Domain/1.0.0": {
+        "runtime": {
+          "Ledger.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Ledger.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ledger.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

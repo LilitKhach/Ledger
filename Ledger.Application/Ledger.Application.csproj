@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Ledger.Domain\Ledger.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>

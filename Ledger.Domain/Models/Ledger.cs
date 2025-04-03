@@ -2,7 +2,7 @@
 
 namespace Ledger.Domain;
 
-public class Ledger
+public class LedgerModel
 {
-    public List<TransactionRecord> Transactions { get; set; } = null!;
+    public List<TransactionRecord> TransactionRecords { get; set; } = null!;
 }
