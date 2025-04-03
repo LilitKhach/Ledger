@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Ledger.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Ledger.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ledger.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Ledger.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Ledger.Domain/Ledger.Domain.csproj",
+      "msbuildProject": "../Ledger.Domain/Ledger.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Ledger.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\37493\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj": {
+              "projectPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

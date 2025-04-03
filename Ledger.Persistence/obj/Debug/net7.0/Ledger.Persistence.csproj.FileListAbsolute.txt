@@ -22,3 +22,6 @@ C:\Users\37493\Source\Repos\Ledger\Ledger.Persistence\obj\Debug\net7.0\Ledger.Pe
 C:\Users\37493\Source\Repos\Ledger\Ledger.Persistence\obj\Debug\net7.0\refint\Ledger.Persistence.dll
 C:\Users\37493\Source\Repos\Ledger\Ledger.Persistence\obj\Debug\net7.0\Ledger.Persistence.pdb
 C:\Users\37493\Source\Repos\Ledger\Ledger.Persistence\obj\Debug\net7.0\ref\Ledger.Persistence.dll
+C:\Users\37493\Source\Repos\Ledger\Ledger.Persistence\bin\Debug\net7.0\Ledger.Domain.dll
+C:\Users\37493\Source\Repos\Ledger\Ledger.Persistence\bin\Debug\net7.0\Ledger.Domain.pdb
+C:\Users\37493\Source\Repos\Ledger\Ledger.Persistence\obj\Debug\net7.0\Ledger.Persistence.csproj.CopyComplete
