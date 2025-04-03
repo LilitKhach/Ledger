@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Persistence\\Ledger.Persistence.csproj": {}
+    "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Persistence\\Ledger.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj": {
+    "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Domain\\Ledger.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Domain\\Ledger.Domain.csproj",
         "projectName": "Ledger.Domain",
-        "projectPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj",
+        "projectPath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Domain\\Ledger.Domain.csproj",
         "packagesPath": "C:\\Users\\37493\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\obj\\",
+        "outputPath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\37493\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Persistence\\Ledger.Persistence.csproj": {
+    "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Persistence\\Ledger.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Persistence\\Ledger.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Persistence\\Ledger.Persistence.csproj",
         "projectName": "Ledger.Persistence",
-        "projectPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Persistence\\Ledger.Persistence.csproj",
+        "projectPath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Persistence\\Ledger.Persistence.csproj",
         "packagesPath": "C:\\Users\\37493\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\37493\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj": {
-                "projectPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj"
+              "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Domain\\Ledger.Domain.csproj": {
+                "projectPath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Domain\\Ledger.Domain.csproj"
               }
             }
           }
