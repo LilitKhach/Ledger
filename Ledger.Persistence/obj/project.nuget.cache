@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l3q2dZxhjYSac0bb4QZgJ+L+CUWcxtiI3FacaML6k3sz5pZzFjRTq6ASYzsR5/K95u5k5SLaovhmE1NqieA79g==",
+  "dgSpecHash": "Loz/RYqHXwGtes5kb0priElHsBbraGNI6kkLEhYnGEMXAi6uckI1rmHZvvWXOwP6alvvJEEJtfHWtJsm3gdq7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Persistence\\Ledger.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Persistence\\Ledger.Persistence.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

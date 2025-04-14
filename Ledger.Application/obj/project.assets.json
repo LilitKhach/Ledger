@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Application\\Ledger.Application.csproj",
+      "projectUniqueName": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Application\\Ledger.Application.csproj",
       "projectName": "Ledger.Application",
-      "projectPath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Application\\Ledger.Application.csproj",
+      "projectPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Application\\Ledger.Application.csproj",
       "packagesPath": "C:\\Users\\37493\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Application\\obj\\",
+      "outputPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\37493\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Domain\\Ledger.Domain.csproj": {
-              "projectPath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Domain\\Ledger.Domain.csproj"
+            "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj": {
+              "projectPath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj"
             }
           }
         }

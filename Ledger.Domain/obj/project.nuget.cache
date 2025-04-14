@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vMtAiICxusrTkLEstLSlNse6fQb4v+1pUcmIGAmQL0ayw5F0/KJetr5p4nWxfPkBzFZlkGRFgucf17id4/V/Dg==",
+  "dgSpecHash": "acvN//+vsPB12arYJiDWCDLVu4kSZUltSwwn8X8g0wVl9G0zoD7q7YrimmQbwF6IG5HeYO/uhHDFG0k3rVPtMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\37493\\Source\\Repos\\LedgerSystem\\Ledger.Domain\\Ledger.Domain.csproj",
+  "projectFilePath": "C:\\Users\\37493\\Source\\Repos\\Ledger\\Ledger.Domain\\Ledger.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
