@@ -6,6 +6,8 @@ public class LedgerModel : BaseModel
 {
     private readonly List<TransactionRecord> TransactionRecords = new();
 
+    public DateTime Date { get; set; }
+
     public void Deposit(decimal amount)
     {
         TransactionRecords.Add(new TransactionRecord(Guid.NewGuid(), TransactionType.Deposit, amount, DateTime.UtcNow));
@@ -15,7 +17,7 @@ public class LedgerModel : BaseModel
     {
         var currentBalance = GetBalance();
 
-        if(amount > currentBalance)
+        if (amount > currentBalance)
         {
             throw new InvalidOperationException("Not enough funds.");
         }
@@ -24,5 +26,17 @@ public class LedgerModel : BaseModel
     }
 
     public decimal GetBalance() => TransactionRecords.Sum(tr => tr.TransactionType == TransactionType.Deposit ? tr.Amount : -tr.Amount);
+
+    public decimal GetBalanceForDate(DateTime date)
+    {
+        return TransactionRecords.Where(tr => tr.Date <= date)
+            .Sum(tr => tr.TransactionType == TransactionType.Deposit ? tr.Amount : -tr.Amount);
+    }
+
     public IReadOnlyList<TransactionRecord> GetTransactionHistory() => TransactionRecords.AsReadOnly();
+
+    public IReadOnlyList<TransactionRecord> GetTransactionHistoryForDate(DateTime date)
+    {
+        return TransactionRecords.Where(tr => tr.Date <= date).ToList().AsReadOnly();
+    }
 }

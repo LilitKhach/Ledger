@@ -34,10 +34,51 @@ public class LedgerService : ILedgerService
         _ledgerRepository.SaveLedger(ledger);
     }
 
+    public void RollBack(Guid ledgerId)
+    {
+        var ledgerTransactions = _ledgerRepository.GetLedgerById(ledgerId);
+        var lastOperation = ledgerTransactions.GetTransactionHistory().LastOrDefault()
+            ?? throw new NullReferenceException("No transaction is found.");
+
+        var amount = lastOperation.Amount;
+
+        if (amount == 0)
+        {
+            throw new Exception("Amount can not be 0.");
+        }
+
+        if (lastOperation.TransactionType == Domain.TransactionType.Deposit)
+        {
+            var command = new WithdrawCommand(ledgerTransactions, amount);
+            command.Execute();
+        }
+        else
+        {
+            var command = new DepositCommand(ledgerTransactions, amount);
+            command.Execute();
+        }
+    }
+
     public decimal GetBalance(Guid ledgerId)
     {
         var ledger = _ledgerRepository.GetLedgerById(ledgerId);
         return ledger.GetBalance();
+    }
+
+    public (decimal, List<TransactionRecordViewModel>) GetBalanceForDate(Guid ledgerId, DateTime date)
+    {
+        var ledger = _ledgerRepository.GetLedgerById(ledgerId);
+        var balance = ledger.GetBalanceForDate(date);
+        var transactions = ledger.GetTransactionHistoryForDate(date);
+        var historyViewModels = transactions.Select(
+            transactionRecord => new TransactionRecordViewModel(
+                transactionRecord.TransactionType,
+                transactionRecord.Amount,
+                transactionRecord.Date
+                )).ToList();
+
+
+        return (balance, historyViewModels);
     }
 
     public IReadOnlyList<TransactionRecordViewModel> GetTransactionHistory(Guid ledgerId)

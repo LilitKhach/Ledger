@@ -22,9 +22,9 @@ public class LedgerController : ControllerBase
     }
 
     [HttpPost("{ledgerId}/deposit")]
-    public IActionResult Deposit([FromRoute]Guid ledgerId, decimal transactionAmount)
+    public IActionResult Deposit([FromRoute] Guid ledgerId, decimal transactionAmount)
     {
-        if(transactionAmount == 0) 
+        if (transactionAmount == 0)
         {
             return BadRequest("Deposit amount cannot be 0.");
         }
@@ -41,7 +41,7 @@ public class LedgerController : ControllerBase
     }
 
     [HttpPost("{ledgerId}/withdraw")]
-    public IActionResult Withdraw([FromRoute]Guid ledgerId, decimal transactionAmount)
+    public IActionResult Withdraw([FromRoute] Guid ledgerId, decimal transactionAmount)
     {
         if (transactionAmount == 0)
         {
@@ -52,11 +52,26 @@ public class LedgerController : ControllerBase
         {
             _ledgerService.Withdraw(ledgerId, transactionAmount);
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             return BadRequest($"Failed to withdraw: {ex.Message}");
         }
 
+        return Ok();
+    }
+
+    [HttpPost]
+    [Route("{ledgerId}/revert")]
+    public IActionResult RollBack([FromRoute] Guid ledgerId)
+    {
+        try
+        {
+            _ledgerService.RollBack(ledgerId);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest($"Failed to revert: {ex.Message}");
+        }
         return Ok();
     }
 
@@ -70,5 +85,12 @@ public class LedgerController : ControllerBase
     public IReadOnlyList<TransactionRecordViewModel> GetTransactionHistory([FromRoute] Guid ledgerId)
     {
         return _ledgerService.GetTransactionHistory(ledgerId);
+    }
+
+    [HttpGet("{ledgerId}/balance/{date}")]
+    public BalanceAndTransactionsForDateViewModel GetBalanceForDate([FromRoute] Guid ledgerId, DateTime date)
+    {
+        var (balance, transactions) = _ledgerService.GetBalanceForDate(ledgerId, date);
+        return new BalanceAndTransactionsForDateViewModel { Balance = balance, Transactions = transactions };
     }
 }
