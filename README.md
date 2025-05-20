@@ -52,8 +52,10 @@ dotnet run --project Ledger.Api
 | `POST`     | `/api/ledger/`                          | Create a new ledger         |
 | `POST`     | `/api/ledger/{ledgerId}/deposit`        | Deposit funds into a ledger |
 | `POST`     | `/api/ledger/{ledgerId}/withdraw`       | Withdraw funds from a ledger |
+| `POST`     | `/api/ledger/{ledgerId}/revert`         | Revert last operation for the ledger |
 | `GET`      | `/api/ledger/{ledgerId}/balance`        | Get the current balance of the ledger |
-| `GET`      | `/api/ledger/{ledgerId}/transactions`   | Get transaction history for a ledger |
+| `GET`      | `/api/ledger/{ledgerId}/transactions`  | Get transaction history for a ledger |
+| `GET`      | `/api/ledger/{ledgerId}/balance/{date}`| Get the balance for a specific date
 
 
 ### Start from Creation of a Ledger
